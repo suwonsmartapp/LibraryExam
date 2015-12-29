@@ -1,4 +1,32 @@
 JSON/XML 관련 라이브러리 예제
+# 0. 예제 JSON / XML
+## JSON
+```
+{"coord":{"lon":126.98,"lat":37.57},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":272.16,"pressure":1033,"humidity":42,"temp_min":270.15,"temp_max":273.15},"visibility":10000,"wind":{"speed":1.5,"deg":170},"clouds":{"all":20},"dt":1451361000,"sys":{"type":1,"id":8519,"message":0.01,"country":"KR","sunrise":1451342768,"sunset":1451377302},"id":1835848,"name":"Seoul","cod":200}
+```
+## XML
+```
+<current>
+<city id="1835848" name="Seoul">
+<coord lon="126.98" lat="37.57"/>
+<country>KR</country>
+<sun rise="2015-12-28T22:46:09" set="2015-12-29T08:21:44"/>
+</city>
+<temperature value="273.9" min="273.15" max="274.15" unit="kelvin"/>
+<humidity value="34" unit="%"/>
+<pressure value="1032" unit="hPa"/>
+<wind>
+<speed value="1.5" name="Calm"/>
+<gusts/>
+<direction value="190" code="S" name="South"/>
+</wind>
+<clouds value="1" name="clear sky"/>
+<visibility value="10000"/>
+<precipitation mode="no"/>
+<weather number="800" value="sky is clear" icon="01d"/>
+<lastupdate value="2015-12-29T05:20:00"/>
+</current>
+```
 # 1. okhttp
 ## URL
 
